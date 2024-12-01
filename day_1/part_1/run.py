@@ -3,8 +3,7 @@ def main():
     right_side = []
 
     # load from file
-    with open('input.txt', 'r') as f:
-    # with open('test_input.txt', 'r') as f:
+    with open('../inputs/input.txt', 'r') as f:
         for line in f:
             left_side_item, right_side_item = line.removesuffix('\n').strip().split('   ')
             left_side.append(int(left_side_item))
